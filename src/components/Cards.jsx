@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from '../components/Card'
+import Card from './Card'
 import stock from './stock.js'
 
 const Cards = () => {
@@ -8,8 +8,8 @@ const Cards = () => {
     <>
         <div className="container d-flex justify-content-center align-items-center">
             <div className="row">
-                <div className="col-md-4">
-                    <Card/>
+                <div className="col-md-4" key={stock.id}>
+                    <Card />
                 </div>
                 
             </div>
