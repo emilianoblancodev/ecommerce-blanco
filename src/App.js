@@ -2,7 +2,8 @@ import React from 'react';
 import './App.css';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
-import Cards from './components/Cards.jsx'
+import Contacto from './components/Contacto.jsx'
+import Card from './components/Card.jsx'
 
 function App() {
 
@@ -10,7 +11,7 @@ function App() {
     <>
       <Nav />
       <Footer />
-      {/* <Cards /> */}
+      {/* <Contacto />  Lo dejo comentado hasta crear las rutas*/}  
 
     </>
   );
