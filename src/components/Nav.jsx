@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nav.css';
 import logo from '../assets/img/jugador.gif'
+import carrito from '../assets/img/carrito.png'
 
 
 const Nav = () => {
@@ -25,6 +26,9 @@ const Nav = () => {
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" href="#">Niños</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="#"><img id="carrito" src={carrito}/></a>
                         </li>
                         
                     </ul>
