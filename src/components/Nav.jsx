@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../src/index.css';
+import './Nav.css';
 
 
 const Nav = () => {
@@ -8,7 +8,7 @@ const Nav = () => {
 
     <>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="container-fluid">
+            <div className="container">
                 <a className="navbar-brand" id="nombre_tienda" href="#">Delta Sports</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

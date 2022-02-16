@@ -10,15 +10,4 @@ body {
 
 }
 
-#nombre_tienda{
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 3rem;
-}
 
-nav {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-nav li a{
-  font-size: 2rem;
-}
