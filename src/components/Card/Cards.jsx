@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
-import stock from './stock.js'
+import stock from '../stock.js'
+import './Card.css'
 
 const Cards = () => {
     
