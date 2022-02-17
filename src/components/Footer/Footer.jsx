@@ -1,5 +1,5 @@
 import React from 'react'
-import react_logo from '../assets/img/react.gif'
+import react_logo from '../../assets/img/react.gif'
 import './Footer.css'
 
 

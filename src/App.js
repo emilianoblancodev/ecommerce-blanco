@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav.jsx';
-import Footer from './components/Footer.jsx';
-import Contacto from './components/Contacto.jsx'
+import Nav from '../src/components/Nav/Nav.jsx';
+import Footer from '../src/components/Footer/Footer.jsx';
+import Contacto from '../src/components/Contacto/Contacto.jsx'
 import Card from './components/Card.jsx'
 
 function App() {
