@@ -1,7 +1,8 @@
 import React from 'react'
 import '../../App.css'
 import '../Tarjeta/Tarjeta.css'
-import {Button, Card} from 'react-bootstrap'
+import {Button, Card, Badge} from 'react-bootstrap'
+
 
 const Tarjeta = () => {
   
@@ -18,7 +19,8 @@ const Tarjeta = () => {
     titulo: "Mochila Adidas",
     src: "../src/assets/img/mochila.png",
     descripcion: "Mochila Adidas de color gris plomo, impermeable con bolsillo de seguridad antirrobo ",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 6000
 },
 {
     id: 2,
@@ -115,7 +117,11 @@ const Tarjeta = () => {
                         <Card.Text>
                             {product.descripcion}
                         </Card.Text>
-                        <Button variant="warning">Comprar</Button>
+                        <h2><Badge bg="danger">${product.precio}</Badge></h2>
+                        <div className="d-grid gap-2">
+                            <Button size="lg" variant="warning">Comprar</Button>
+                        </div>
+                        
                     </Card.Body>
                 </Card>
 
