@@ -12,7 +12,7 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
             <img id="logo" src={logo} />
-            <Navbar.Brand href="#home">Mega Sport</Navbar.Brand>
+            <Navbar.Brand id="nombre_tienda">Mega Sport</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
@@ -22,19 +22,25 @@ const Navigation = () => {
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
-    </Nav>
-  </Navbar.Collapse>
-  </Container>
-</Navbar>
+          </NavDropdown>
+        </Nav>
+        <Nav>
+          <Nav.Link href="#deets">Contacto</Nav.Link>
+        </Nav>
+        <Nav>
+          <svg xmlns="http://www.w3.org/2000/svg"     class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <circle cx="6" cy="19" r="2" />
+          <circle cx="17" cy="19" r="2" />
+          <path d="M17 17h-11v-14h-2" />
+          <path d="M6 5l14 1l-1 7h-13" />
+        </svg>
+        </Nav>
+        
+        
+      </Navbar.Collapse>
+    </Container>
+  </Navbar>
     
     </>
     
