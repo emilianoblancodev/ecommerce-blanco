@@ -10,7 +10,8 @@ const Tarjeta = () => {
     titulo: "Top Nike",
     src: "../../src/assets/img/top.png",
     descripcion: "Top de color rosa intenso de licra especial para hacer running",
-    usuario: "mujer"
+    usuario: "mujer",
+    precio: 3500
 },
 {
     id: 1,
@@ -24,49 +25,56 @@ const Tarjeta = () => {
     titulo: "Remera Adidas",
     src: "../src/assets/img/remera_adidas.png",
     descripcion: "Remera de hombre Adidas, de lycra transpirable especial para running",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 3100
 },
 {
     id: 3,
     titulo: "Gorro Nike",
     src: "../src/assets/img/gorro.png",
     descripcion: "Gorro Nike de color blanco, transpirable",
-    usuario: "mujer"
+    usuario: "mujer",
+    precio: 2500
 },
 {
     id: 4,
     titulo: "Pantalón Adidas",
     src: "../src/assets/img/pantalon.png",
     descripcion: "Pantalón de hombre Adidas de color azul chupinado con cierre bajo",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 5200
 },
 {
     id: 5,
     titulo: "Short Nike",
     src: "../src/assets/img/short.png",
     descripcion: "Short de mujer de color rosa, transpirable",
-    usuario: "mujer"
+    usuario: "mujer",
+    precio: 3900
 },
 {
     id: 6,
     titulo: "Campera Nike",
     src: "../src/assets/img/campera.png",
     descripcion: "Campera de hombre Nike, de color negro con capucha y cierre ultra-resistente",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 8100
 },
 {
     id: 7,
     titulo: "Zapatilla Nike",
     src: "../src/assets/img/zapatilla_nike.png",
     descripcion: "Zapatilla de hombre modelo Renew, de color blanco con suela ultra blanda especial para running",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 19500
 },
 {
     id: 8,
     titulo: "Zapatilla Nike",
     src: "../src/assets/img/nike_airmax.png",
     descripcion: "Zapatilla Nike modelo AIR-MAX de hombre, de color negro y suela especial con capsula de aire",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 23800
     
 },
 {
@@ -74,21 +82,24 @@ const Tarjeta = () => {
     titulo: "Remera DPS",
     src: "../src/assets/img/remera.png",
     descripcion: "Remera Running de hombre de color azul transpirable",
-    usuario: "hombre"
+    usuario: "hombre",
+    precio: 3500
 },
 {
     id: 10,
     titulo: "Zapatilla Puma",
     src: "../src/assets/img/zapatilla_puma.png",
     descripcion: "Zapatilla Puma de color gris de hombre con suela estilo clasico especial urban ",
-    usuario: "mujer"
+    usuario: "mujer",
+    precio: 16500
 },
 {
     id: 11,
     titulo: "Calzas Nike",
     src: "../src/assets/img/calzas.png",
     descripcion: "Calzas Nike largas de lycra con inscripcion de la marca en la pierna",
-    usuario: "mujer"
+    usuario: "mujer",
+    precio: 11500
 },    
 ]
 
