@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
+import Carrousel from '../Carrousel/Carrousel.jsx'
 import Tarjeta from '../Tarjeta/Tarjeta.jsx'
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
     <>
         <Container>
             <Row>
+                    <Carrousel />
                     <Tarjeta />
             </Row>
         </Container>
