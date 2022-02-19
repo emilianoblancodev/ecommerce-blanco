@@ -1,13 +1,14 @@
 import React from 'react'
 import '../../App.css'
-import {stock} from '../stock.js'
+import '../Tarjeta/Tarjeta.css'
+import {Button, Card} from 'react-bootstrap'
 
-const Card = () => {
+const Tarjeta = () => {
   
-  const stock = [{
+  const products = [{
     id: 0,
     titulo: "Top Nike",
-    src: "../src/assets/img/top.png",
+    src: "../../src/assets/img/top.png",
     descripcion: "Top de color rosa intenso de licra especial para hacer running",
     usuario: "mujer"
 },
@@ -93,17 +94,40 @@ const Card = () => {
 
   return (
     <>
-        <div className="card">
-          <img src="..." className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+        {products.map((product)=>{
+            return(
+                
+                <Card style={{ width: '18rem', margin:'20px' }}>
+                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Body>
+                        <Card.Title>{product.titulo}</Card.Title>
+                        <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                        </Card.Text>
+                        <Button variant="warning">Comprar</Button>
+                    </Card.Body>
+                </Card>
+
+                //         <div className="card">
+                //     <img src={product.src} className="card-img-top" alt="..." />
+                //     <div className="card-body">
+                //         <h5 className="card-title">{product.titulo}</h5>
+                //         <p className="card-text">{product.descripcion}</p>
+                //         <a href="#" className="btn btn-primary">Agregar al Carrito</a>
+                //     </div>
+                // </div>
+                    
+                
+
+                
+            )
+        
+        })}
+        
     
     </>
   )
 }
 
-export default Card;
+export default Tarjeta;

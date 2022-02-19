@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
-import Nav from '../src/components/Nav/Nav.jsx'
-import Footer from '../src/components/Footer/Footer.jsx'
+import Navigation from './components/Navigation/Navigation.jsx'
+
 import Contacto from '../src/components/Contacto/Contacto.jsx'
-import Cards from '../src/components/Card/Cards.jsx'
+import Main from '../src/components/Main/Main.jsx'
 
 function App() {
 
 
   return (
     <>
-      <Nav />
-      <Footer />
-      <Cards />
+      <Navigation />
+      
+      <Main />
       {/* <Contacto />  Lo dejo comentado hasta crear las rutas*/}  
 
     </>
