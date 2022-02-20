@@ -130,9 +130,9 @@ const Tarjeta = () => {
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
                         <InputGroup className="mb-3">
-                            <Button variant="outline-warning">-1</Button>
-                            <FormControl aria-label="Example text with two button addons" />
-                            <Button variant="outline-warning">+1</Button>
+                            <Button variant="outline-warning">-</Button>
+                            <FormControl aria-label="Example text with two button addons" placeholder="1" />
+                            <Button variant="outline-warning">+</Button>
     
                         </InputGroup>
                         <div className="d-grid gap-2">
