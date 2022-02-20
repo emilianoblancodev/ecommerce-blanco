@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../App.css'
 import '../Tarjeta/Tarjeta.css'
-import {Button, Card, Badge} from 'react-bootstrap'
+import {Button, Card, Badge, InputGroup, FormControl} from 'react-bootstrap'
 import top from '../../assets/img/top.png'
 import mochila from '../../assets/img/mochila.png'
 import remera_adidas from '../../assets/img/remera_adidas.png'
@@ -129,23 +129,18 @@ const Tarjeta = () => {
                             {product.descripcion}
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
+                        <InputGroup className="mb-3">
+                            <Button variant="outline-warning">-1</Button>
+                            <FormControl aria-label="Example text with two button addons" />
+                            <Button variant="outline-warning">+1</Button>
+    
+                        </InputGroup>
                         <div className="d-grid gap-2">
                             <Button size="lg" variant="warning">Comprar</Button>
                         </div>
                         
                     </Card.Body>
                 </Card>
-
-                //         <div className="card">
-                //     <img src={product.src} className="card-img-top" alt="..." />
-                //     <div className="card-body">
-                //         <h5 className="card-title">{product.titulo}</h5>
-                //         <p className="card-text">{product.descripcion}</p>
-                //         <a href="#" className="btn btn-primary">Agregar al Carrito</a>
-                //     </div>
-                // </div>
-                    
-                
 
                 
             )
