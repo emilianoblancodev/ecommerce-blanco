@@ -124,7 +124,15 @@ const Tarjeta = () => {
         setIncrease(increase + 1);
     }
 
+//Decrementador
 
+    const [decrease, setDecrease] = useState(0)
+    const dec = () => {
+        if(decrease>=1){
+            setDecrease(decrease - 1);
+        }
+            
+    }
 
 
 
@@ -142,10 +150,9 @@ const Tarjeta = () => {
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
                         <InputGroup className="mb-3">
-                            <Button variant="outline-warning">-</Button>
-                            <FormControl aria-label="Example text with two button addons" placeholder={increase} />
-                            <Button onClick={inc} variant="outline-warning">+</Button>
-    
+                            
+                            <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" />
+                            
                         </InputGroup>
                         <div className="d-grid gap-2">
                             <Button size="lg" variant="warning">Comprar</Button>
