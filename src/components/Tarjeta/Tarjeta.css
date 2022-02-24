@@ -5,3 +5,8 @@
 h2{
     text-align: center;
 }
+
+.qty::placeholder{
+    text-align: center;
+    font-weight: bold;
+}

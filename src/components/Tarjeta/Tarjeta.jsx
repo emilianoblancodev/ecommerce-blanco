@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../../App.css'
 import '../Tarjeta/Tarjeta.css'
 import {Button, Card, Badge, InputGroup, FormControl} from 'react-bootstrap'
@@ -14,6 +14,8 @@ import nike_airmax from '../../assets/img/nike_airmax.png'
 import remera from '../../assets/img/remera.png'
 import zapatilla_puma from '../../assets/img/zapatilla_puma.png'
 import calzas from '../../assets/img/calzas.png'
+import Modal from '../Modal/Modal.jsx'
+import Increase from '../Increase/Increase.jsx'
 
 const Tarjeta = () => {
   
@@ -115,6 +117,24 @@ const Tarjeta = () => {
     precio: 11500
 },    
 ]
+// incrementador
+
+    const [increase, setIncrease] = useState(1)
+    const inc = () => {
+        setIncrease(increase + 1);
+    }
+
+//Decrementador
+
+    const [decrease, setDecrease] = useState(0)
+    const dec = () => {
+        if(decrease>=1){
+            setDecrease(decrease - 1);
+        }
+            
+    }
+
+
 
   return (
     <>
@@ -130,10 +150,9 @@ const Tarjeta = () => {
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
                         <InputGroup className="mb-3">
-                            <Button variant="outline-warning">-</Button>
-                            <FormControl aria-label="Example text with two button addons" placeholder="1" />
-                            <Button variant="outline-warning">+</Button>
-    
+                            
+                            <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" />
+                            
                         </InputGroup>
                         <div className="d-grid gap-2">
                             <Button size="lg" variant="warning">Comprar</Button>
