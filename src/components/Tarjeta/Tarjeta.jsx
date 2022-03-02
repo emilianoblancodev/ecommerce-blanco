@@ -15,7 +15,6 @@ import remera from '../../assets/img/remera.png'
 import zapatilla_puma from '../../assets/img/zapatilla_puma.png'
 import calzas from '../../assets/img/calzas.png'
 import Modal from '../Modal/Modal.jsx'
-import Increase from '../Increase/Increase.jsx'
 
 const Tarjeta = () => {
   
@@ -25,7 +24,8 @@ const Tarjeta = () => {
     src: top,
     descripcion: "Top de color rosa intenso de licra especial para hacer running",
     usuario: "mujer",
-    precio: 3500
+    precio: 3500,
+    stock: 3
 },
 {
     id: 1,
@@ -33,7 +33,8 @@ const Tarjeta = () => {
     src: mochila,
     descripcion: "Mochila Adidas de color gris plomo, impermeable con bolsillo de seguridad antirrobo ",
     usuario: "hombre",
-    precio: 6000
+    precio: 6000,
+    stock: 12
 },
 {
     id: 2,
@@ -41,7 +42,8 @@ const Tarjeta = () => {
     src: remera_adidas,
     descripcion: "Remera de hombre Adidas, de lycra transpirable especial para running",
     usuario: "hombre",
-    precio: 3100
+    precio: 3100,
+    stock: 8
 },
 {
     id: 3,
@@ -49,7 +51,8 @@ const Tarjeta = () => {
     src: gorro,
     descripcion: "La gorra Nike Tech Swoosh para mujer cuenta con 100% poliéster Dri-FIT ripstop construcción. Esta gorra ligera y transpirable viene con un cierre trasero sin enganches que garantiza el ajuste perfecto y la comodidad total.",
     usuario: "mujer",
-    precio: 2500
+    precio: 2500,
+    stock: 4
 },
 {
     id: 4,
@@ -57,7 +60,8 @@ const Tarjeta = () => {
     src: pantalon,
     descripcion: "Pantalón de hombre Adidas de color azul chupinado con cierre bajo",
     usuario: "hombre",
-    precio: 5200
+    precio: 5200,
+    stock: 5
 },
 {
     id: 5,
@@ -65,7 +69,8 @@ const Tarjeta = () => {
     src: short,
     descripcion: "Short de mujer de color rosa, transpirable",
     usuario: "mujer",
-    precio: 3900
+    precio: 3900,
+    stock: 4
 },
 {
     id: 6,
@@ -73,7 +78,8 @@ const Tarjeta = () => {
     src: campera,
     descripcion: "Campera de hombre Nike con friza interior, de color negro con capucha y cierre ultra-resistente.",
     usuario: "hombre",
-    precio: 8100
+    precio: 8100,
+    stock: 3
 },
 {
     id: 7,
@@ -81,7 +87,8 @@ const Tarjeta = () => {
     src: zapatilla_nike,
     descripcion: "Zapatilla de hombre modelo Renew 100% sintetico, de color blanco con suela ultra blanda especial para running. La malla de la parte superior es transpirable lo que nos brinda mayor confort.",
     usuario: "hombre",
-    precio: 19500
+    precio: 19500,
+    stock: 3
 },
 {
     id: 8,
@@ -89,7 +96,8 @@ const Tarjeta = () => {
     src: nike_airmax,
     descripcion: "Zapatilla Nike modelo AIR-MAX de hombre, de color negro y suela especial de color blanco con capsula de aire para un mayor confort.",
     usuario: "hombre",
-    precio: 23800
+    precio: 23800,
+    stock: 2
     
 },
 {
@@ -98,7 +106,8 @@ const Tarjeta = () => {
     src: remera,
     descripcion: "Remera Running de hombre de color azul transpirable",
     usuario: "hombre",
-    precio: 3500
+    precio: 3500,
+    stock: 3
 },
 {
     id: 10,
@@ -106,7 +115,8 @@ const Tarjeta = () => {
     src: zapatilla_puma,
     descripcion: "Zapatilla Puma de color gris de hombre con suela de goma estilo clasico y empeine de cuero textil especial urban",
     usuario: "mujer",
-    precio: 16500
+    precio: 16500,
+    stock: 2
 },
 {
     id: 11,
@@ -114,7 +124,8 @@ const Tarjeta = () => {
     src: calzas,
     descripcion: "Calzas Nike largas de lycra con inscripcion de la marca en la pierna",
     usuario: "mujer",
-    precio: 11500
+    precio: 11500,
+    stock: 3
 },    
 ]
 // incrementador
@@ -150,8 +161,12 @@ const Tarjeta = () => {
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
                         <InputGroup className="mb-3">
-                            
-                            <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" />
+                
+                            <Button variant="outline-warning">-</Button>
+                            <FormControl aria-label="Example text with two button addons" placeholder={increase} />
+                            <Button onClick={inc} variant="outline-warning">+</Button>
+
+                            {/* <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" /> */}
                             
                         </InputGroup>
                         <div className="d-grid gap-2">
