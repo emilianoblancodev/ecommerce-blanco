@@ -4,6 +4,8 @@ import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
 import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import logo from '../../assets/img/jugador.gif'
 import carrito from '../../assets/img/carrito.png'
+import Contacto from '../../Pages/Contacto';
+import Nosotros from '../../Pages/Nosotros';
 
 
 const Navigation = () => {
@@ -17,11 +19,11 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Nosotros</Nav.Link>
-              <Nav.Link href="#pricing">Contacto</Nav.Link>
+              <Nav.Link href="/nosotros">Nosotros</Nav.Link>
+              <Nav.Link href="/Contacto">Contacto</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">Tienda</Nav.Link>
+          <Nav.Link href="/">Tienda</Nav.Link>
         </Nav>
         <Nav>
           <svg xmlns="http://www.w3.org/2000/svg"     class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -32,8 +34,6 @@ const Navigation = () => {
           <path d="M6 5l14 1l-1 7h-13" />
         </svg>
         </Nav>
-        
-        
       </Navbar.Collapse>
     </Container>
   </Navbar>
