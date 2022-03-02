@@ -1,24 +1,4 @@
-import React, {useState} from 'react'
-import '../../App.css'
-import '../Tarjeta/Tarjeta.css'
-import {Button, Card, Badge, InputGroup, FormControl} from 'react-bootstrap'
-import top from '../../assets/img/top.png'
-import mochila from '../../assets/img/mochila.png'
-import remera_adidas from '../../assets/img/remera_adidas.png'
-import gorro from '../../assets/img/gorro.png'
-import pantalon from '../../assets/img/pantalon.png'
-import short from '../../assets/img/short.png'
-import campera from '../../assets/img/campera.png'
-import zapatilla_nike from '../../assets/img/zapatilla_nike.png'
-import nike_airmax from '../../assets/img/nike_airmax.png'
-import remera from '../../assets/img/remera.png'
-import zapatilla_puma from '../../assets/img/zapatilla_puma.png'
-import calzas from '../../assets/img/calzas.png'
-
-
-const Tarjeta = () => {
-  
-  const products = [{
+const products = [{
     id: 0,
     titulo: "Top Nike",
     src: top,
@@ -128,62 +108,5 @@ const Tarjeta = () => {
     stock: 3
 },    
 ]
-// incrementador
-
-    const [increase, setIncrease] = useState(1)
-    const inc = () => {
-        setIncrease(increase + 1);
-    }
-
-//Decrementador
-
-    const [decrease, setDecrease] = useState(0)
-    const dec = () => {
-        if(decrease>=1){
-            setDecrease(decrease - 1);
-        }
-            
-    }
 
 
-
-  return (
-    <>
-        {products.map((product)=>{
-            return(
-                
-                <Card style={{ width: '18rem', margin:'20px', text: 'center' }}>
-                    <Card.Img variant="top" src={product.src} />
-                    <Card.Body>
-                        <Card.Title>{product.titulo}</Card.Title>
-                        <Card.Text>
-                            {product.descripcion}
-                        </Card.Text>
-                        <h2><Badge bg="danger">${product.precio}</Badge></h2>
-                        <InputGroup className="mb-3">
-                
-                            {/* <Button variant="outline-warning">-</Button>
-                            <FormControl aria-label="Example text with two button addons" placeholder={increase} />
-                            <Button onClick={inc} variant="outline-warning">+</Button> */}
-
-                            {/* <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" /> */}
-                            
-                        </InputGroup>
-                        <div className="d-grid gap-2">
-                            <Button size="lg" variant="warning">Comprar</Button>
-                        </div>
-                        
-                    </Card.Body>
-                </Card>
-
-                
-            )
-        
-        })}
-        
-    
-    </>
-  )
-}
-
-export default Tarjeta;
