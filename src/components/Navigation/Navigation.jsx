@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navigation.css';
 import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
+import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import logo from '../../assets/img/jugador.gif'
 import carrito from '../../assets/img/carrito.png'
 
@@ -16,16 +17,11 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
-              <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-          </NavDropdown>
+              <Nav.Link href="#features">Nosotros</Nav.Link>
+              <Nav.Link href="#pricing">Contacto</Nav.Link>
         </Nav>
         <Nav>
-          <Nav.Link href="#deets">Contacto</Nav.Link>
+          <Nav.Link href="#deets">Tienda</Nav.Link>
         </Nav>
         <Nav>
           <svg xmlns="http://www.w3.org/2000/svg"     class="icon icon-tabler icon-tabler-shopping-cart" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">

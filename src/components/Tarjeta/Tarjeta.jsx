@@ -162,9 +162,9 @@ const Tarjeta = () => {
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
                         <InputGroup className="mb-3">
                 
-                            <Button variant="outline-warning">-</Button>
+                            {/* <Button variant="outline-warning">-</Button>
                             <FormControl aria-label="Example text with two button addons" placeholder={increase} />
-                            <Button onClick={inc} variant="outline-warning">+</Button>
+                            <Button onClick={inc} variant="outline-warning">+</Button> */}
 
                             {/* <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" /> */}
                             
