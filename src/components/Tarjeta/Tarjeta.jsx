@@ -128,31 +128,16 @@ const Tarjeta = () => {
     stock: 3
 },    
 ]
-// incrementador
-
-    const [increase, setIncrease] = useState(1)
-    const inc = () => {
-        setIncrease(increase + 1);
-    }
-
-//Decrementador
-
-    const [decrease, setDecrease] = useState(0)
-    const dec = () => {
-        if(decrease>=1){
-            setDecrease(decrease - 1);
-        }
-            
-    }
 
 
 
   return (
     <>
-        {products.map((product)=>{
-            return(
-                
-                <Card style={{ width: '18rem', margin:'20px', text: 'center' }}>
+        
+            {products.map((product)=>{
+            
+            return (
+                <Card style={{ width: '20rem', margin:'20px', text: 'center' }}>
                     <Card.Img variant="top" src={product.src} />
                     <Card.Body>
                         <Card.Title>{product.titulo}</Card.Title>
@@ -160,28 +145,14 @@ const Tarjeta = () => {
                             {product.descripcion}
                         </Card.Text>
                         <h2><Badge bg="danger">${product.precio}</Badge></h2>
-                        <InputGroup className="mb-3">
-                
-                            {/* <Button variant="outline-warning">-</Button>
-                            <FormControl aria-label="Example text with two button addons" placeholder={increase} />
-                            <Button onClick={inc} variant="outline-warning">+</Button> */}
-
-                            {/* <FormControl className="qty" type="number" aria-label="Example text with two button addons" placeholder="1" min="1" /> */}
-                            
-                        </InputGroup>
                         <div className="d-grid gap-2">
                             <Button size="lg" variant="warning">Comprar</Button>
                         </div>
-                        
                     </Card.Body>
                 </Card>
-
-                
             )
-        
         })}
-        
-    
+
     </>
   )
 }
